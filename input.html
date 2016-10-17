@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+	/*引用外部图标部分*/
+    @font-face {font-family: 'iconfont';
+    src:
+    url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+   .icon{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+    .icon-search:before{content:"\e604"}
+   /*输入框样式设置*/
+   .box{
+   	position: relative;
+   }
+   .box input{
+   	border:none;
+   	outline: none;
+   	border:1px solid pink;
+   	height: 30px;
+   	line-height: 30px;
+   	padding-left: 30px;
+   }
+   .icon-search{
+   	color: #ccc;
+   	position: absolute;
+   	left: 5px;
+   	top:5px;
+   }
+   input[type=search]:focus + .icon-search{
+   	color: #111;
+   }
+
+
+	</style>
+</head>
+<body>
+<div class="box">
+<input type="search">
+<span class="icon icon-search"></span>	
+</div>
+</body>
+</html>
+
