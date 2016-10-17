@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+   /*输入框样式设置*/
+     .next-step{
+     	background-color: red;
+     	cursor: pointer;
+     	padding: 2px 4px;
+     	display: inline-block;
+        
+     }
+     input[type=email]:invalid + .next-step{
+     	opacity: 0.5;
+     }
+	</style>
+</head>
+<body>
+<div class="box">
+<input type="email">
+<span class="next-step">Next</span>	
+</div>
+</body>
+</html>
+
