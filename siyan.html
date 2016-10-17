@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+     input[type=checkbox]{
+     	display: none;
+     }
+     .checkbox{
+     	width: 10px;
+     	height: 10px;
+     	border:1px solid gray;
+     	background-color: #fff;
+     }
+     input[type=checkbox]:checked + .checkbox{
+     	background-color: red;
+     }
+
+
+	</style>
+</head>
+<body>
+<!-- 伪类：向某些选择器添加特殊效果
+伪元素：伪元素指将某些特殊的效果添加到某些选择器.
+可以看出，两者都与选择器有关,第二就是都添加一些特殊的效果,这里的特殊就是两者描述了css不能描述的效果.
+
+伪类：hover checked active focus link first-child 
+伪元素：after before first-letter dirst-line
+
+其中after与before在项目中使用最多,可以在元素后面或者前面添加一些内容。
+
+使用inputched 与“+”选择器可以实现单选框与复选框的选中效果: -->
+<label>
+<input type="checkbox">
+<span class="checkbox">ada</span>
+</label>
+</body>
+</html>
+
